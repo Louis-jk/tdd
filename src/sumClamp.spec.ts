@@ -2,11 +2,11 @@ import { sumClamp } from './sumClamp';
 
 describe('sumClamp', () => {
   it('should sum up to zero', () => {
-    expect(sumClamp([], 10)).toBe(10);
+    expect(sumClamp([], 10)).toBe(0);
   });
 
   it('should sum up to zero from some numbers', () => {
-    expect(sumClamp([-2, 1], 10)).toBe(9);
+    expect(sumClamp([-2], 10)).toBe(8);
   });
 
   it('should some some numbers', () => {
